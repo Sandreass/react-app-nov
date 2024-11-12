@@ -1,10 +1,10 @@
-
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
-    <h1>Counties...</h1>
-  </div>
+    <>
+    <Header />
+  </>
   );
 }
 
