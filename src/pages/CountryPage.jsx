@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import CountryCard from "../components/CountryCard";
 
 const CountriesPage = () => {
   const [countries, setCountries] = useState([]);
@@ -16,11 +17,10 @@ const CountriesPage = () => {
   console.log(countries);
 
   return (
+   
     <div>
       {countries.map((country) => (
-        <div key={country.name.common}>
-          <h2>{country.name.common}</h2>
-        </div>
+        <CountryCard key={country.name.common} country={country} />
       ))}
     </div>
   );
