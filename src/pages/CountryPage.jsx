@@ -18,7 +18,7 @@ const CountriesPage = () => {
 
   return (
    
-    <div>
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
       {countries.map((country) => (
         <CountryCard key={country.name.common} country={country} />
       ))}
